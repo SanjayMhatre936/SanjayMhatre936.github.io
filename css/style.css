@@ -5,7 +5,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #444444;
   background-color: #E0E5EC;
-  padding: 60px
+  padding: 90px 40px 30px 10px;
 }
 
 h1,
@@ -18,10 +18,30 @@ h6 {
   color: #aaa;
 }
 
+h6 {
+  padding-left: 10px;
+}
+
 p {
   font-size: 12px;
   color: #aaa;
-  padding: 30px 25px 10px 10px;
+  padding: 10px 25px 5px 10px;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  color: #aaa;
+  text-decoration: none;
+}
+
+a:hover {
+  font-family: "Roboto", sans-serif;
+  color: rgb(116, 208, 224);
+}
+
+a:active {
+  font-family: "Roboto", sans-serif;
+  color: rgb(84, 148, 173);
 }
 
 /*--------------------------------------------------------------
@@ -108,7 +128,7 @@ p {
 
 h6 svg {
   height: 25px;
-  margin: 0 10px -4px 0px;
+  margin: 0px 10px 4px 0px;
 }
 
 .username,
@@ -172,21 +192,138 @@ h6 svg {
     3px 3px 3px 0 rgba(0, 0, 0, 0.15),
     -3px -3px 3px 0 rgb(255, 255, 255);
   border-radius: 15px;
-  margin-left: 50px;
   margin-bottom: 10px;
-  padding: 8px 8px 8px 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 7px 7px 0px 7px;
 }
 
-
 .img-container {
-  background: url(../img/logo.jpg);
-  width: 140px;
-  height: 140px;
+  align-items: center;
+  background: #f8f9fa;
+  width: 60%;
   border-radius: 50%;
-  margin-left: 80px;
   margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 40px;
   box-shadow:
     3px 3px 3px 0 rgba(0, 0, 0, 0.15),
     -3px -3px 3px 0 rgb(255, 255, 255);
-  border: 3px solid #f8f9fa;
+  padding: 8px 8px 8px 8px;
+}
+
+/*---------------------------------------------
+# Navbar
+----------------------------------------------*/
+
+.navbar {
+  box-shadow:
+    3px 3px 3px 0 rgba(0, 0, 0, 0.15),
+    -3px -3px 3px 0 rgb(255, 255, 255);
+
+}
+
+.navbar-brand {
+  padding-left: 80px;
+}
+
+/*.navbar-nav {
+	padding-left: 600px;
+}*/
+
+.nav-item,
+.nav-item,
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item a {
+  display: block;
+  position: relative;
+  color: #aaa;
+  padding: 12px 15px;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 550;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-item a:hover,
+.nav-item .active>a,
+.nav-item li:hover>a {
+  color: rgb(116, 208, 224);
+  text-decoration: none;
+}
+
+.nav-item .drop-down>a:after {
+  content: "\ea99";
+  font-family: IcoFont;
+  padding-left: 5px;
+}
+
+.nav-item .drop-down .drop-down>a {
+  padding-right: 35px;
+}
+
+.nav-item .drop-down .drop-down>a:after {
+  content: "\eaa0";
+  font-family: IcoFont;
+  position: absolute;
+  right: 15px;
+}
+
+.nav-link,
+.nav-link,
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-link a {
+  display: block;
+  position: relative;
+  color: #4f5a62;
+  padding: 12px 15px;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-link a:hover,
+.nav-link .active>a,
+.nav-link li:hover>a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.nav-link .drop-down>a:after {
+  content: "\ea99";
+  font-family: IcoFont;
+  padding-left: 5px;
+}
+
+.nav-link .drop-down .drop-down>a {
+  padding-right: 35px;
+}
+
+.nav-link .drop-down .drop-down>a:after {
+  content: "\eaa0";
+  font-family: IcoFont;
+  position: absolute;
+  right: 15px;
+}
+
+/* -----
+SVG Icons 
+----- */
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #aaa;
+  stroke-width: 10;
 }
